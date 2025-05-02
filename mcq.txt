@@ -1,0 +1,94 @@
+1)Command to install packets in ASP.Net => dotnet add package <packagename>
+2)What is the role of dbContext class in ef=>
+3)ToListAsync() return type=>
+4)Method to delete an entity in ef core=>
+5)Return type of async method is typically what=>Action/void/task
+6)How do you handle exception in TAP based Model
+7)what happens if an exception is not caught in an async method=>Exception is stored in the Task.Exception property
+8)what is dependancy injection =>design pattern used in SD to achive IOC(not sure)?
+9)Correct way to inject a service into a controller in ASP.NET Core is : By Using contructor injection and adding the servive to DI container
+10)Correct order of components in MVC =>CMV
+11)which method is used to handle concurrency conflict in EF core =>a)ResolveConcurrency()b)HandleConcurrency()c)ReslveConflict()d)SaveChanges
+12)Custom middleware must implement which interface in dotnet
+13)Typical return type of an async method that does not return a value ?=>Task
+14)what is the return type of a method that uses Task to wait multiple results=>void,Task,Task[],IEnumerable<Task>
+15)what is the return type of a Task.WhenAll() to await multiple tasks?=>Task,Task<>
+16)Which tool is commonly used to run unit tests in a .NET application=>testExplorer,NuGet,MSBuild,EF
+17)In XUnit which attribute is used to run the same test with different data?=>fact,test,theory,data
+18)In Mvc application,where should you typically implement pagination logic?=>mode,view,controller,ViewModel
+19)How can you track changes to an entity in EF Core=>UseChangeTracker,UseEntityTracker,UseStateManager,UseEntityState
+20)Which method in startup class is used to configure dependancy injection?=>Configure,ConfigureServices,UseServices,RegisterServices
+21)Which method is used to run a sync method asyncly?=>Task.Run()
+22)how do you add a service to a dependancy injection container in ASP.NET core?=>by adding it to Startup.ConfigureServices method
+23)Which of the following middleware is typically  used to serve static files in an ASP.NET Core application?=>UseStaticFiles
+24)Command to create a new asp.net core project?
+25)what is the purpose of application.json file in an ASP.Net core project?to store application settings and config data,to manage database migrations,to config middleware,to config logging
+26)How do you add custom middleware to the request pipeline?by adding it to configureServices method,by adding it to the configure method,by adding it to the main method,by adding it to the startup method
+27)method used to addm middleware to HTTP request pipeline in ASP.NET Core=>useMiddleware,addmiddleware,registerMiddleware,ConfigureMiddleware
+28)How can you create custom middleware in ASP.NET Core?"
+By creating a class that implements the IMiddleware interface and registering it in the Startup.Configure method:
+By creating a class that implements the IMiddleware interface and registering it in the Startup.ConfigureServices method
+By creating a class that implements the IMiddleware interface and registering it in the Program.Main method
+By creating a class that implements the IMiddleware interface and registering it in the Program.Configure method
+
+29)How do you rethrow an exception from a completed task?=>throw;
+30)RESTfull services full form?
+31)Which attribute in ASP.NET Core is used to define a Web API route?
+32)Which return type is commonly used for an action method in a Web API to return a status code along with data?
+33)How do you specify a parameter in a route template in ASP.NET Core?
+34)Which tool is commonly used for testing APIs by sending HTTP requests?
+35)Which of the following is an attribute used to define a test method in XUnit?  
+a. [ Fact ]
+b. [ Test ]
+c. [ TestMethod ]
+d. [ Theory ]
+36)Which method is commonly used to assert equality in XUnit tests?
+37)What is the primary purpose of unit tests?
+38)Can you use the await keyword inside a synchronous method?
+39)﻿﻿﻿which method in dbcontext is used to create a database schema based on your mode//
+40)what is asp.net core//
+41).what is the purpose of the startup code in asp.net core application//
+42)what is the middleware in asp.net core//
+43)which tool is commonly used for testing apis by sending http request//
+44)how can you override the default behaviour of dbconext when it comes to saving changes //
+45)what is primary benifit of async. programming//
+46) what file is used to manage dependicies in asp.net core
+47) which tool is commonly used to manage package dependicies in asp.net core project
+48) which of the follwoing is not a lifetime option for services in asp.net core di
+49) which of the following statement will update an entity in ef core
+50) which feature of efcore is used ot validate entities before saving them to the database
+51) which of the following interface must a custom middlware class implement
+52) which of the follwing is used to return an http 404 => not found(),200 OK() ,201 ,402,403 sttus code from an api controller action in asp.net core
+53) what must an asynce method return to you
+54) how do you run an asp.net core project from the command line
+55) how to inject a service inside a controller in asp.net core
+56) what is the role of the view in mvc applicatio
+57) how do you handle exception in TAP based method
+58) which status of indicates that the resource has been succesfully creted in a restful service
+59) defalut url in swagger ui in asp.net
+60) return type of action method in asp.net core => get
+61) what is the default return type of asycn method that does not return anything
+62) which namespace is used to implemetn async programming => System.Threading.Task
+63) what is the main purpose of ef core=>To serve as cross platform orm
+64) which of the following practices are essential to write better test case => isolate each test case
+65) which of the following handles user input =>Controller, view, model,viewModel 
+66)which of the component of mvc is used to render user interface=>View
+67)How to add a entity in ef core?
+68)What happens when we use async without await? await will run synchronously
+69)RETURN TYPE OF Task?
+70)which keyword is used in c# to access classes from external namespace=>Using
+71)What is the use NoContent()?=>To return a 204 no content status code
+72)which method is used to save changes to database in EF?=>SaveChanges();
+73)Command to run asp.net core application?=>dotnet run
+74)Primary purpose of swagger?=>Api Documentation
+75)Which tool is used for API testing=>Postman
+76)What is primary purpose of view in mvc?=>To handle app's data representation and ui
+77)Most widely used return type for controller action methods=>IActionResult
+78)what should be the return type of actio method which does not return any value but performs async operations?=>TASK
+79)method used to insert new entity in ef=>.add()
+80)method used to modifynew entity in ef=>.update()
+81)method used to delete new entity in ef=>.Remove()
+82)which method is used to search entity using primary key or indexing ef core=>Find()
+83)Use of await keyword in async programming =>to pause the execution of async method
+84)Attribute use to mark a method as test method in XUnit=>[Fact]
+85)401=unauthorized 404 not found 200 Ok 201 created at action
