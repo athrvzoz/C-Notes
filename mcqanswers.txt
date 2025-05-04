@@ -1,0 +1,258 @@
+Command to install packets in ASP.Net:
+dotnet add package <packagename>
+
+Role of DbContext class in EF:
+It acts as a bridge between the database and the application, managing database operations and entity tracking.
+
+ToListAsync() return type:
+Task<List<T>>
+
+Method to delete an entity in EF Core:
+.Remove()
+
+Return type of async method is typically what:
+Task (or Task<T> for methods returning a value).
+
+How do you handle exceptions in TAP-based model:
+Use try-catch blocks or handle exceptions using Task.ContinueWith().
+
+What happens if an exception is not caught in an async method:
+The exception is stored in the Task.Exception property.
+
+What is dependency injection:
+A design pattern used to achieve Inversion of Control (IoC) by injecting dependencies into a class rather than creating them inside the class.
+
+Correct way to inject a service into a controller in ASP.NET Core:
+By using constructor injection and adding the service to the DI container.
+
+Correct order of components in MVC:
+Controller → Model → View (CMV).
+
+Which method is used to handle concurrency conflict in EF Core:
+SaveChanges().
+
+Custom middleware must implement which interface in .NET:
+IMiddleware.
+
+Typical return type of an async method that does not return a value:
+Task.
+
+Return type of a method that uses Task to wait for multiple results:
+Task[] or IEnumerable<Task>.
+
+Return type of Task.WhenAll() to await multiple tasks:
+Task or Task<T[]>.
+
+Tool commonly used to run unit tests in a .NET application:
+Test Explorer.
+
+In XUnit, which attribute is used to run the same test with different data:
+[Theory].
+
+In MVC application, where should you typically implement pagination logic:
+Controller.
+
+How can you track changes to an entity in EF Core:
+ChangeTracker.
+
+Which method in the Startup class is used to configure dependency injection:
+ConfigureServices.
+
+Which method is used to run a sync method asynchronously:
+Task.Run().
+
+How do you add a service to a dependency injection container in ASP.NET Core:
+By adding it to the Startup.ConfigureServices method.
+
+Middleware typically used to serve static files in an ASP.NET Core application:
+UseStaticFiles.
+
+Command to create a new ASP.NET Core project:
+dotnet new <template> (e.g., dotnet new mvc).
+
+Purpose of appsettings.json file in an ASP.NET Core project:
+To store application settings and configuration data.
+
+How do you add custom middleware to the request pipeline:
+By adding it to the Configure method in the Startup class.
+
+Method used to add middleware to the HTTP request pipeline in ASP.NET Core:
+UseMiddleware().
+
+How can you create custom middleware in ASP.NET Core:
+By creating a class that implements the IMiddleware interface and registering it in the Startup.ConfigureServices method.
+
+How do you rethrow an exception from a completed task:
+throw;.
+
+RESTful services full form:
+Representational State Transfer.
+
+Attribute in ASP.NET Core used to define a Web API route:
+[Route].
+
+Return type commonly used for an action method in a Web API to return a status code along with data:
+IActionResult.
+
+How do you specify a parameter in a route template in ASP.NET Core:
+Use curly braces {} (e.g., [Route("api/{id}")]).
+
+Tool commonly used for testing APIs by sending HTTP requests:
+Postman.
+
+Attribute used to define a test method in XUnit:
+[Fact].
+
+Method commonly used to assert equality in XUnit tests:
+Assert.Equal().
+
+Primary purpose of unit tests:
+To test individual components in isolation to ensure they work as expected.
+
+Can you use the await keyword inside a synchronous method:
+No.
+
+Which method in DbContext is used to create a database schema based on your model:
+EnsureCreated().
+
+What is ASP.NET Core:
+A cross-platform, high-performance framework for building modern, cloud-based, and internet-connected applications.
+
+Purpose of the Startup class in an ASP.NET Core application:
+To configure the application's services and middleware.
+
+What is middleware in ASP.NET Core:
+Software components that handle HTTP requests and responses in the request pipeline.
+
+Tool commonly used for testing APIs by sending HTTP requests:
+Postman.
+
+How can you override the default behavior of DbContext when it comes to saving changes:
+Override the SaveChanges or SaveChangesAsync method.
+
+Primary benefit of async programming:
+Improves application responsiveness by not blocking threads.
+
+File used to manage dependencies in ASP.NET Core:
+csproj file.
+
+Tool commonly used to manage package dependencies in an ASP.NET Core project:
+NuGet.
+
+Which of the following is not a lifetime option for services in ASP.NET Core DI:
+Not applicable (options not provided).
+
+Statement to update an entity in EF Core:
+context.Update(entity).
+
+Feature of EF Core used to validate entities before saving them to the database:
+Data annotations or Fluent API.
+
+Interface a custom middleware class must implement:
+IMiddleware.
+
+Method to return an HTTP 404 status code from an API controller action in ASP.NET Core:
+NotFound().
+
+What must an async method return:
+Task or Task<T>.
+
+How do you run an ASP.NET Core project from the command line:
+dotnet run.
+
+How to inject a service inside a controller in ASP.NET Core:
+Use constructor injection.
+
+Role of the view in an MVC application:
+To handle the application's data representation and UI.
+
+How do you handle exceptions in TAP-based methods:
+Use try-catch or Task.ContinueWith().
+
+Status code indicating that the resource has been successfully created in a RESTful service:
+201 Created.
+
+Default URL in Swagger UI in ASP.NET Core:
+/swagger.
+
+Return type of an action method in ASP.NET Core:
+IActionResult.
+
+Default return type of an async method that does not return anything:
+Task.
+
+Namespace used to implement async programming:
+System.Threading.Tasks.
+
+Main purpose of EF Core:
+To serve as a cross-platform ORM.
+
+Essential practice to write better test cases:
+Isolate each test case.
+
+Component of MVC used to handle user input:
+Controller.
+
+Component of MVC used to render the user interface:
+View.
+
+Method to add an entity in EF Core:
+.Add().
+
+What happens when we use async without await:
+The method runs synchronously.
+
+Return type of Task:
+Task.
+
+Keyword used in C# to access classes from an external namespace:
+using.
+
+Use of NoContent():
+To return a 204 No Content status code.
+
+Method to save changes to the database in EF Core:
+SaveChanges().
+
+Command to run an ASP.NET Core application:
+dotnet run.
+
+Primary purpose of Swagger:
+API documentation.
+
+Tool used for API testing:
+Postman.
+
+Primary purpose of the view in MVC:
+To handle the application's data representation and UI.
+
+Most widely used return type for controller action methods:
+IActionResult.
+
+Return type of an action method that performs async operations but does not return a value:
+Task.
+
+Method to insert a new entity in EF Core:
+.Add().
+
+Method to modify an entity in EF Core:
+.Update().
+
+Method to delete an entity in EF Core:
+.Remove().
+
+Method to search for an entity using a primary key in EF Core:
+.Find().
+
+Use of await keyword in async programming:
+To pause the execution of an async method until the awaited task completes.
+
+Attribute to mark a method as a test method in XUnit:
+[Fact].
+
+HTTP status codes:
+
+401: Unauthorized
+404: Not Found
+200: OK
+201: Created
